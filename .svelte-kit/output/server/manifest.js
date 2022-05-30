@@ -3,7 +3,7 @@ export const manifest = {
 	assets: new Set(["Hamburger Menu.svg","Logos/JP Morgan.svg","Logos/Samsung.svg","Logos/Tinder.svg","Logos/Verizon.svg","Logos/Visa.svg","Logos/Walmart.svg","Social Icons/Github.svg","Social Icons/LinkedIn.svg","Social Icons/Twitter.svg","Spense.png","YelpCamp.png","favicon.png"]),
 	mimeTypes: {".svg":"image/svg+xml",".png":"image/png"},
 	_: {
-		entry: {"file":"start-7844553e.js","js":["start-7844553e.js","chunks/index-ab700c65.js"],"css":[]},
+		entry: {"file":"start-24a925a7.js","js":["start-24a925a7.js","chunks/index-ab700c65.js"],"css":[]},
 		nodes: [
 			() => import('./nodes/0.js'),
 			() => import('./nodes/1.js'),

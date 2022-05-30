@@ -2,13 +2,7 @@
   import Button from '$lib/components/Button.svelte'
   import { page } from '$app/stores'
   
-  let navItems = [
-    { name: 'Articles', link: '/articles'},
-    { name: 'Chats', link: '/chats'},
-    { name: 'Awards', link: '/awards'},
-    { name: 'About', link: '/about'},
-  ]
-
+  let navItems = ['Articles', 'Chats', 'Awards', 'About']
 </script>
 
 <div class="flex justify-between mt-10">
@@ -16,8 +10,8 @@
   
   <ul class="phone:hidden laptop:block">
     {#each navItems as navItem}
-      <li class="inline mx-5 " class:active={$page.url.pathname === navItem.link}>
-        <a class="hover:text-white" sveltekit:prefetch href={navItem.link}>{navItem.name}</a>
+      <li class="inline mx-5 " class:active={$page.url.pathname === navItem}>
+        <a class="hover:text-white" sveltekit:prefetch href={navItem}>{navItem}</a>
       </li>
     {/each}
   </ul>

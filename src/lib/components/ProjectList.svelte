@@ -1,7 +1,4 @@
 <script lang="ts">
-  import { fly } from 'svelte/transition'
-  import { quintOut } from 'svelte/easing'
-
   let projects = [
     {
       image: '.././Spense.png',
@@ -16,7 +13,7 @@
   ]
 </script>
 
-<ul class="flex justify-between mt-12 laptop:flex-row phone:flex-col" in:fly={{opacity: 0, x: -100, easing: quintOut, duration: 1000}}>
+<ul class="flex justify-between mt-12 laptop:flex-row phone:flex-col">
   {#each projects as project}
     <li class="laptop:w-5/12 laptop:py-0 phone:py-3">
       <img src={project.image} alt="project">
